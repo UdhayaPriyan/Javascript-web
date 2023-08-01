@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Login Form  */
+
+.content-login {
+   display: none;
+}
+
+.content-login.active {
+    display: block;
+    height: 450px;
+    width: 400px;
+    margin-top: 40px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    top: 10px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.btn:active {
+    opacity: 0.8;
+}
+
+/* Student Teacher Registration Styles */
+
+.content-registration {
+    display: none;
+}
+
+.content-registration.active {
+    display: inline;
+    height: 450px;
+    width: 400px;
+    margin-top: 40px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btn.register {
+    background-color: green;
+}
+
+/* List Styles */
+.content-list {
+    display: none;
+}
+
+.content-list.active {
+    display: inline;
+    height: 450px;
+    width: 400px;
+    margin-top: 40px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.list-headings {
+    position: absolute;
+    top:0px;
+    height: 30px;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-list {
+    width: 100%;
+    padding: 10px;
+}
+
+tr {
+    padding: 20px;
+}
+
+td {
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.td-name {
+    margin-left: 60px;
+}

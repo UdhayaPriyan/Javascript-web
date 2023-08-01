@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Validation</title>
+</head>
+
+<body>
+
+    <div class="content-login active" id='content-login'>
+        <h1 class='heading' id='heading'>Log-In</h1>
+        <form class='form-control' id='signin-form'>
+            <input type="text" id='user' class='input' placeholder="Username">
+            <input type="text" id='password' class='input' placeholder="Password">
+            <button class='btn' id='btn' formaction="to-do.html">Login</button>
+        </form>
+
+    </div>
+
+    <div class='content-registration' id='content-registration'>
+        <h1 class='heading'>Register</h1>
+        <form class='form-control' id='registration-form'>
+            <input class='input' id='first-name' type='text' placeholder='First Name' />
+            <input class='input' id='last-name' type='text' placeholder='Last Name' />
+            <input class='input' id='course' type='text' placeholder='Course' />
+        </form>
+        <button class='btn register' id='register'>Register</button>
+        <button class='btn' id='logout'>Logout</button>
+    </div>
+
+    <div class='content-list' id='content-list'>
+        <div class="list-headings">
+            <h4>Name</h4>
+            <h4>Course</h4>
+        </div>
+        <table class='user-list' id='user-list'></table>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>

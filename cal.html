@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calstyle.css" />
+  <script src="/calc.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="content">
+
+      <!-- user input area -->
+      <div class="user-inputs">
+        <!-- first number input area  -->
+        <div class="first-number-area">
+          <div class="first-number-text">
+            First Digit
+          </div>
+          <div class="first-number-input">
+            <input type="text" id="first-number" autofocus>
+          </div>
+        </div>
+
+        <!-- second number input area -->
+        <div class="second-number-area">
+          <div class="second-number-text">
+            Second Digit
+          </div>
+          <div class="second-number-input">
+            <input type="text" id="second-number">
+          </div>
+        </div>
+      </div>
+
+      <!-- operator area -->
+      <div class="operator-area">
+        <div class="add-operator">
+          <input type="radio" name="operator" value="add">
+          <label for="add">Addition</label>
+        </div>
+        <div class="subtract-operator">
+          <input type="radio" name="operator" value="subtract">
+          <label for="subtract">Subtraction</label>
+        </div>
+        <div class="multiply-operator">
+          <input type="radio" name="operator" value="multiply">
+          <label for="multiply">Multiplication</label>
+        </div>
+        <div class="divide-operator">
+          <input type="radio" name="operator" value="divide">
+          <label for="divide">Division</label>
+        </div>
+      </div>
+
+      <!-- final operator area -->
+      <div class="final-operator-area">
+        <div class="equal">
+          <input type="button" value="=" , id="equals" , onclick="calc();">
+          <input type="button" value="Clear" id="clear" onclick="resetCalc();">
+        </div>
+      </div>
+
+      <!-- result area -->
+      <div class="result-area">
+        <div id="result-text">
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

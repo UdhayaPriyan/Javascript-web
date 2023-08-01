@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100vh;
+  background-color: #F0F3F4;
+}
+
+.user-inputs, 
+.operator-area, 
+.final-operator-area, 
+.result-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.first-number-area, 
+.second-number-area {
+  text-align: center;
+  margin: 0 10px;
+}
+
+#equals,
+#clear {
+  /* color: white; */
+  background-color: #FFFFFF;
+  padding: 4px 9px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px rgb(177,178,179);
+  margin: 0 5px;
+}
+
+#equals:hover, 
+#clear:hover {
+  background-color: #497BFD;
+  color: white;
+}
